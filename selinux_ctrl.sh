@@ -32,6 +32,7 @@ if [[ $read_en = "yes" ]]; then
         echo "enabled"
     else
         echo "disabled"
+    fi
 fi
 
 echo "Show SELinux configuration mode? [yes/no]:"
