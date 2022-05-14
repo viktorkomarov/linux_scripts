@@ -48,9 +48,9 @@ fi
 echo "Enable SELinux configuration mode ? [yes/no]:\n"
 readline read
 if [[ read = "yes" ]]; then 
-    sed -i 's/^SELINUX=[A_Za-z]*$/SELINUX=enforcing/' /etc/selinux/config)
+    sed -i 's/^SELINUX=[A_Za-z]*$/SELINUX=enforcing/' /etc/selinux/config
 else 
-    sed -i 's/^SELINUX=[A_Za-z]*$/SELINUX=disabled/' /etc/selinux/config)
+    sed -i 's/^SELINUX=[A_Za-z]*$/SELINUX=disabled/' /etc/selinux/config
 fi
 
 
