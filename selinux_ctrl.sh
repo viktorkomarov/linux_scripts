@@ -27,7 +27,11 @@ fi
 echo "Show SELinux status? [yes/no]:"
 read read_en
 if [[ $read_en = "yes" ]]; then 
-    echo "$(selinuxenabled)"
+    selinuxenabled
+    if [[ $? -eq 0 ]]; then
+        echo "enabled"
+    else
+        echo "disabled"
 fi
 
 echo "Show SELinux configuration mode? [yes/no]:"
